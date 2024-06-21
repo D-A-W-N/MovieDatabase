@@ -1,0 +1,29 @@
+.movielist,
+.genrelist {
+  -fx-hgap: 20;
+  -fx-vgap: 20;
+  -fx-padding: 10;
+}
+
+.movielist__poster {
+  -fx-border-radius: 5;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+
+.movielist__poster__stackpane:hover > * {
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+  -fx-scale-z: 1.1;
+}
+
+.movielist__grid {
+  -fx-hgap: 20;
+}
+
+.movielist__title {
+  -fx-font-size: 14;
+  -fx-font-weight: 700;
+  -fx-padding: 10;
+  -fx-text-fill: #fff;
+  -fx-background-color: rgba(0, 0, 0, 0.5);
+}

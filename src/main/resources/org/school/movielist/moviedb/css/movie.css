@@ -1,0 +1,46 @@
+.movie {
+  -fx-hgap: 20;
+  -fx-vgap: 20;
+  -fx-padding: 10;
+}
+
+.movie__grid {
+  -fx-hgap: 20;
+}
+
+.movie__poster {
+  -fx-border-radius: 5;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+
+.movie__title {
+  -fx-font-size: 16;
+  -fx-font-weight: 700;
+}
+.movie__description {
+  -fx-font-size: 14;
+  -fx-font-weight: 400;
+}
+.movie__release_date {
+  -fx-font-size: 12;
+}
+
+.movie__genre_title {
+  -fx-font-size: 14;
+  -fx-font-weight: 700;
+  -fx-padding: 10;
+}
+
+.movie__genre_list {
+  -fx-padding: 10;
+}
+
+.movie__actor_title {
+  -fx-font-size: 14;
+  -fx-font-weight: 700;
+  -fx-hgap: 10;
+}
+
+.movie__actor_list {
+  -fx-padding: 10;
+}

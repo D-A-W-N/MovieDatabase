@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fitToHeight="true" fitToWidth="true"
+            fx:id="movie_add_scroll_pane"
+            fx:controller="org.school.movielist.moviedb.controller.MovieAddController">
+    <GridPane fx:id="movie_add_grid_pane">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="178.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="122.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="73.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="135.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="164.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <Label text="Titel:" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Release Date (ex. &quot;2007-02-23&quot;):" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label prefHeight="100.0" prefWidth="202.0" text="Poster Url (ex. &quot;/filename.jpg):&quot;)"
+               GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Beschreibung:" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <TextArea prefHeight="159.0" prefWidth="358.0" GridPane.columnIndex="1" GridPane.rowIndex="5"
+                  fx:id="description"/>
+        <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="title"/>
+        <DatePicker GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="release_date"/>
+        <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="poster_url"/>
+        <Button mnemonicParsing="false" text="Film eintragen" GridPane.columnIndex="2" GridPane.rowIndex="6"
+                fx:id="submit_button" onAction="#handleSubmit"/>
+    </GridPane>
+</ScrollPane>
